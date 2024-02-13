@@ -46,7 +46,7 @@ body{
     width: 100%;
     position: relative;
     height: 100vh;
-    background: url('imagenes/banner.jpg') no-repeat center center/cover; 
+    background: url('imagenes/silla.jpg') no-repeat center center/cover; 
     left: 0; top: 0;
     z-index: 1;
 }
