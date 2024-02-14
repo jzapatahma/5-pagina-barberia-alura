@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenidoxx{
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: rebeccapurple;
+    width: 100%;
+    height: 250px;
+    place-items: center; 
+    /* place-content: center; */
+}
+.contenidoxx .imagen1x{
+    background: #27668C;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    display: grid;
+    place-items: top;
+    justify-items: right;
+}
+.contenidoxx .imagen2x{
+    background: blue;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    display: grid;
+    place-items:top;
+    justify-items: left;
+      
+}
+.contenidoxx .imagen2x img{
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    transition: 150ms;
+    /* box-shadow: 5px 5px 100px olive; */
+}
+

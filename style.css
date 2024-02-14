@@ -32,7 +32,6 @@ body{
     padding: 8px 6px;
     text-decoration: none;
     color: white;
-
 }
 .menu ul li a:hover{
     color: yellow;
@@ -45,10 +44,11 @@ body{
 .banner{
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 70vh;
     background: url('imagenes/silla.jpg') no-repeat center center/cover; 
     left: 0; top: 0;
     z-index: 1;
+    padding: 5px 0 0 40px;
 }
 
 .banner .texto_banner{
@@ -56,7 +56,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    /* padding: 20px; */
     min-width: 40%;
     min-height: 20%;
     border-radius: 20px;
@@ -66,18 +66,22 @@ body{
 .banner .texto_banner p, 
 .banner .texto_banner h1{
     color: white;
-    margin: 0;
+    margin: 40px;
     text-align: center;
 }
 
 .banner .texto_banner h1{
-    font-size: 28px;
+    font-size: 40px;
 }
+.banner .texto_banner p{
+    font-size: 25px;
+}
+
 
 /* Quienes somos */
 .nosotros{
-    padding: 10px 100px;
-    text-align: center;
+    padding: 10px 300px;
+    text-align: left;
     margin: 40px 0px;
 }
 .titulo{
@@ -87,15 +91,19 @@ body{
     font-size: 40px;
     text-align: center;
 }
-
 .linea{
     width: 200px;
     height: 6px;
     background-color: #27668C;
-    margin: 10px auto;
+    margin: 10px auto 50px;
     border-radius: 5px;
     border-bottom: 30px;
 }
+.nosotros p{margin: 1em 1em 1em 1em;}
+.nosotros img{margin: 0 1em;}
+.nosotros strong{font-weight: bold;}
+.nosotros em{font-style: italic;}
+.utensilios{width: 120px; float: left; border-radius: 5px;}
 
 .boton{
     background-color: #27668C;
@@ -118,6 +126,77 @@ body{
     box-shadow: 5px 5px 5px gray;
 }
 
+.ubicacion{
+    padding: 2em;
+    background: linear-gradient(orange 25%, #888888);
+    text-align: center;
+}
+.ubicacion p{margin: 0 0 1em;}
+
+
+/* Ojoooo buscarle posicion inicial, sera buena practica? */
+/* Uniforma a todos los iframe en todas las paginas */
+iframe {
+    border-radius: 10px;
+    width: 75%;
+    height: 20em;
+    margin: 1em;
+}
+
+/* MAIN - Diferenciales */
+.diferenciales{
+    padding: 1em ;
+    background: #888888;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 20px; */
+    /* background: rebeccapurple; */
+    width: 100%;
+    height: auto;
+    place-items: center; 
+}
+.contenido .lista-diferenciales{
+    /* background: #27668C; */
+    width: 90%;
+    height: 250px;
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    justify-items: right;
+}
+.contenido .imagen-diferencial{
+    /* background: #27668C; */
+    width: 90%;
+    height: 250px;
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    justify-items: left;
+    text-align: center;
+}
+.contenido .imagen-diferencial img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 150ms;
+    box-shadow: 5px 5px 100px olive;
+}
+
+.items{line-height: 2;}
+.items:first-child {font-weight: bold;}
+.items:before{content: "🟂"; margin-right: 5px;}
+.lista-diferenciales{
+    /* width: 50%; */
+    /* margin: auto; */
+    /* text-align: right; */
+    /* padding-right: 1em; */
+}
+.imagen-diferencial-1:hover{opacity: 0.33;}
+
+
 
 /* Servicios */
 .servicios{
@@ -132,10 +211,10 @@ body{
     width: 90%;
     height: 250px;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
 } 
-image p{
+.imagen p{
     text-align: center;
     font-weight: bolder;
     margin: 20px 0;
@@ -165,6 +244,25 @@ image p{
 .espacio{
     margin: 15px 15px;
 }
+
+/* IMAGEN 1 */
+.contenidoxx{
+    margin: 50px 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* gap: 20px; */
+    background: rebeccapurple;
+}
+.contenidoxx .imagen1x{
+    background: #27668C;
+    width: 100%;
+}
+.contenidoxx .imagen2x{
+    background:#888888;
+    display: flex;
+    width: 100%;
+}
+
 
 /* Media Query */
 @media(max-width: 700px) {
@@ -224,14 +322,31 @@ image p{
     }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1024px) {
     .servicios .contenido{
         grid-template-columns: auto auto;
+    }
+    .nosotros{
+        padding: 10px 100px;
+        /* text-align: left;
+        margin: 40px 0px; */
     }
 }
 
 @media(max-width: 450px) {
+    .nosotros{
+        padding: 10px 10px;
+        /* text-align: left;
+        margin: 40px 0px; */
+    }
     .servicios .contenido{
         grid-template-columns: auto;
     }
+    .diferenciales .contenido{
+        grid-template-columns: auto;
+    }
+    .contenido .imagen-diferencial{
+        place-items: center;
+    }
+    
 }
