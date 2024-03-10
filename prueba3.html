@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="prueba3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formulario-contacto" id="formulario-contacto">
+        <div class="contacto-titulo">
+            <h2 class="titulo">Contacto</h2>
+            <!-- <div class="linea"></div> -->
+        </div>
+        <section class="contacto" id="contacto">                        
+            <div class="contacto-detalle">
+                <div class="contacto-detalle-grupo">
+                    <p class="contacto-etiqueta">Dirección:</p>
+                    <p class="contacto-texto">Medellin, Colombia - Latam</p>
+                </div>
+                <div class="contacto-detalle-grupo">
+                    <p class="contacto-etiqueta">Email:</p>
+                    <p class="contacto-texto">jyzapata@gmail.com</p>
+                </div>
+                <div class="contacto-detalle-grupo texto-largo">
+                    <p class="contacto-texto">
+                        Deje su mensaje y con gusto se los responderemos. Muchas gracias.
+                    </p>
+                </div>
+            </div>
+            <form class="contacto-formulario" name="contacto" netlify>
+                <div class="contacto-formulario-grupo">
+                    <label class="contacto-etiqueta" for="name">Nombre</label>
+                    <input required type="text" name="name" id="name" />
+                </div>
+                <div class="contacto-formulario-grupo">
+                    <label class="contacto-etiqueta"  for="email">Email</label>
+                    <input required type="email" name="email" id="email" />
+                </div>
+                <div class="contacto-formulario-grupo">
+                    <label class="contacto-etiqueta" for="message">Mensaje</label>
+                    <textarea required name="message" id="message" rows="6"></textarea>
+                </div>
+                <div class="cs-div-contacto-enviar">
+                    <button type="submit" class="cs-btn-contacto-enviar">Enviar</button>
+                </div>
+            </form>
+            <div class="contacto-horario">
+                <table class="cs-contacto-tabla">
+                    <thead>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>9:00am - 7:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>8:00am - 8:00pm</td>
+                        </tr><tr>
+                            <td>Viernes</td>
+                            <td>7:00am - 9:00pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                                                                                                                       
+        </section>
+    </div>
+</body>
+</html>
