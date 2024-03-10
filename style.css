@@ -82,10 +82,12 @@ body{
     border-bottom: 20px;
     margin-bottom: 1rem;
 }
-
-
-
-
+iframe{
+    max-width: 80%;
+    border-radius: 20px;
+    width:100%;
+    height: 250px;
+}
 /*  */
 /* Quienes somos */
 .nosotros{     
@@ -93,6 +95,7 @@ body{
     margin: 0 10%;
     padding: 30px 0 30px 0;
     /* background: aquamarine; */
+    background-color: white;
 }
 .nosotros p{
     margin: 1em 1em 1em 1em;
@@ -137,72 +140,83 @@ body{
 .ubicacion p{
     margin: 10px 10px 1em;
 }
-.cs-ubicacion-iframe{
-    border-radius: 20px;
-    max-width: 80%;
-    height: 20em;
-    margin: 30px 0;
-}
 /*  */
 /* Diferenciales */
 .cs-diferente{
-    background: #888888;
+    /* background: #888888; */
     padding: 10px 0 30px 0;
-    /* background: rebeccapurple; */
+
+    background: rebeccapurple;
 }
-.cs-diferente-contenido{
-    /* width: 80%; */
-    display: flex;
+.cs-diferente-contenido{   
+    /* display: flex;
     place-self: center;
-    /* gap: 1em; */
-    max-width: 100%;
-    /* background: #27668C; */
+    max-width: 100%; */
+    
     margin: 0 10%;
+
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    height: 400px;
+    background: #27668C;
 }
 .cs-diferente-lista{
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: center; */
-    /* place-self: center; */
-    font-size: clamp(1em, 1vw + 0.1em, 3em);
+    /* width: 80%; */
+    display: flex;
+    place-items: center;
+    place-content: center;
+    /* margin: 10px; */
+    font-size: clamp(.9em, 1vw + 0.5em, 3em);
     background: #888888;
+
+    
+
+    /* height: 180px; */
 }
 .cs-items{
     line-height: 1.5;
+    width: max-content;
 }
 .cs-items:first-child {font-weight: bold;}
 .cs-items:before{
     content: "🟂"; 
 }
 .cs-diferente-imagen{    
-    width: 33vw;
-    max-width: 200px;
-    min-width: 100px;
+    /* width: 100vw; */
+    /* width: 100%; */
+    /* max-width: 200px;
+    min-width: 100px; */
     text-align: center;
-    display: block;
-    margin: auto;
-    /* background: #f7c331; */
+    /* display: block; */
+    /* margin: 10px; */
+
+
+    display: flex;
+    place-items: center;
+    place-content: center;
+    
+
+    background: #f7c331;
+    /* height: 180px; */
+    
 }
 .cs-diferente-figure{
-    width: 100%;    
+    width: 80%;    
     border-radius: 10px;
     transition: 150ms;
     box-shadow: 5px 5px 100px olive;
-    
+    max-width: 450px;
+    min-width: 135px;
+    margin: 1em;
 }
 .cs-diferente-figure:hover{opacity: 0.33;}
 /*  */
 /* Video */
 .cs-diferente-video{
     text-align: center;
-}
-.cs-diferente-iframe{
-    border-radius: 20px;
-    max-width: 80%;
-    height: 20em;
-    width: 100%;
-    margin: 30px 0;
+    background: linear-gradient(#888888 25%, #F8F9F9); 
 }
 /*  */
 /* Servicios Barberia */
@@ -210,7 +224,7 @@ body{
     padding: 10px;
     margin: 0;
     padding: 0;
-    background: linear-gradient(white 50%, #f7c331);
+    background: linear-gradient(#F8F9F9 50%, #f7c331);
 }
 .contenido{
     display: grid;
@@ -285,7 +299,7 @@ body{
 .contacto {         
     border-radius: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(max(300px, 30%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max(250px, 30%), 1fr));
     gap: 2em;     
     margin: 0 10%;
   }
@@ -398,7 +412,7 @@ footer{
         background-color: black;
         margin: 0px;
         padding-top: 30px;
-        transition: 1s;
+        transition: .5s;
         left: -100%;     
         z-index: 2;
     }
