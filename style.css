@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Roboto:wght@100;400;900&display=swap');
+
+*{ padding: 0; margin: 0;box-sizing: border-box;}
+
+:root{/* Definimos variables para usar en cualquier momento de la pagina */
+    --theme-color: white;
+    --primary-color:#27668C;
+    --secondary-color:#f7c331;
+    --text-color-inverse:white;
+    --text-color:black;
+    --navbar-shallow-color:#e5e5e5;
+    --menu-mobile-banckground-color:#3a4460;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*  */
+/* Menu */
+.menu .logo{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.menu ul{float: right; margin-right: 10px;}
+.menu ul li{display: inline-block; margin: 30px 15px;}
+.menu ul li a{ font-size: 16px; padding: 8px 6px; text-decoration: none; color: white;}
+.menu ul li a:hover{ color: yellow;}
+.menu{ background-color: black;}
+/*  */
+/* Banner */
+.banner{
+    width: 100%;
+    position: relative;
+    height: 33vh;
+    background: url('imagenes/silla.jpg') no-repeat center center/cover; 
+    left: 0; top: 0;
+    z-index: 1;
+    padding: 5px 0 0 40px;
+}
+.banner .texto_banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 40%;
+    min-height: 20%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .texto_banner p, 
+.banner .texto_banner h1{
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+.banner .texto_banner h1{ font-size: 40px;}
+.banner .texto_banner p{ font-size: 25px;}
+/*  */
+/* Generales */
+.titulo{ /* Unifica en estilo y tamaño todos la clase "titulo" del sitio */
+    font-family: "Amaranth", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: clamp(1.5rem, 2vw + 1rem, 5rem);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.linea{ /* Unifica en estilo y tamaño todos la clase "linea" del sitio */
+    width: 200px;
+    height: 6px;
+    background-color: #27668C;
+    margin: 10px auto 10px;
+    border-radius: 5px;
+    border-bottom: 30px;
+    /* margin-bottom: 2em; */
+    margin-bottom: 1rem;
+}
+/*  */
+/* Quienes somos */
+.nosotros{     
+    text-align: left;
+    margin: 0 10%;
+    padding: 30px 0 30px 0;
+    /* background: aquamarine; */
+}
+.nosotros p{
+    margin: 1em 1em 1em 1em;
+    text-align: justify; 
+    font-size: clamp(0.9em, 1vw + 0.3em, 3em);
+}
+.nosotros img{
+    margin: 0 1em;
+    padding: .5em;
+}
+.nosotros strong{font-weight: bold;}
+.nosotros em{font-style: italic;}
+.nosotros .utensilios{
+    width: 120px;
+    float: left;
+    border-radius: 1em;
+}
+.nosotros .boton{
+    background-color: #27668C;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+}
+.nosotros .boton:hover{background-color: #27668C; box-shadow: 5px 5px 5px gray;}
+/*  */
+/* Ubicacion y mapa */
+.ubicacion{ 
+    /* padding: 0em;  */
+    background: linear-gradient(orange 25%, #888888); 
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+.ubicacion p{
+    margin: 10px 10px 1em;
+}
+.cs-ubicacion-iframe{
+    border-radius: 20px;
+    max-width: 80%;
+    height: 20em;
+    margin: 30px 0;
+}
+/*  */
+/* Diferenciales */
+.cs-diferente{
+    background: #888888;
+    padding: 10px 0 30px 0;
+    /* background: rebeccapurple; */
+}
+.cs-diferente-contenido{
+    /* width: 80%; */
+    display: flex;
+    place-self: center;
+    /* gap: 1em; */
+    max-width: 100%;
+    /* background: #27668C; */
+    margin: 0 10%;
+}
+.cs-diferente-lista{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* place-self: center; */
+    font-size: clamp(1em, 1vw + 0.1em, 3em);
+    background: #888888;
+}
+.cs-items{
+    line-height: 1.5;
+}
+.cs-items:first-child {font-weight: bold;}
+.cs-items:before{
+    content: "🟂"; 
+}
+.cs-diferente-imagen{    
+    width: 33vw;
+    max-width: 200px;
+    min-width: 100px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    /* background: #f7c331; */
+}
+.cs-diferente-figure{
+    width: 100%;    
+    border-radius: 10px;
+    transition: 150ms;
+    box-shadow: 5px 5px 100px olive;
+    
+}
+.cs-diferente-figure:hover{opacity: 0.33;}
+/*  */
+/* Video */
+.cs-diferente-video{
+    text-align: center;
+}
+.cs-diferente-iframe{
+    border-radius: 20px;
+    max-width: 80%;
+    height: 20em;
+    width: 100%;
+    margin: 30px 0;
+}
+/*  */
+/* Servicios Barberia */
+.servicios{
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white 50%, #f7c331);
+}
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(200px, 30%), 1fr));
+    gap: 20px;
+    place-items: center;
+    justify-self: center;
+    margin: 0 10%;
+}
+.contenido .imagen1,
+.contenido .imagen2,
+.contenido .imagen3,
+.contenido .imagen4,
+.contenido .imagen5{
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 305px;
+    margin: 1px auto;
+    display: block;
+}
+.contenido .imagen1{ background: url('imagenes/cabello-fondo.jpg') no-repeat center center/cover; opacity: 0.7;}
+.contenido .imagen2{ background: url('imagenes/bigote-fondo.jpg') no-repeat center center/cover; opacity: 0.7;}
+.contenido .imagen3{ background: url('imagenes/toque-femenino-fondo.jpg') no-repeat center center/cover; opacity: 0.7;}
+.contenido .imagen4{ background: url('imagenes/barba-fondo.jpg') no-repeat center center/cover; opacity: 0.7;}
+.contenido .imagen5{ background: url('imagenes/cabello+barba-fondo.jpg') no-repeat center center/cover; opacity: 0.7;}
+.contenido .img-cabello{ width: 150px; height: 150px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.8);}
+.contenido #textos{ padding: 0.5em;}
+.contenido h2,  /*Aqui detectamos que para que tome unicamente los estilos para la seccion de servicios se deben manejar de la forma como estan*/
+.contenido p{   /*de otra manera los cambios surtiran efectos en etiquetas h2 y p de otras secciones lo cual no es adecuado*/
+    font-weight: bold;
+    color: white
+}
+.contenido .producto-descripcion{ font-size: 15px; height: 4em;}
+.producto-precio{ 
+    background: orange; 
+    text-align: right; 
+    margin: 7px; 
+    color: #888888;}
+.contenido .boton2{ 
+    background-color: #27668C; 
+    width: 100px; 
+    padding: 5px; 
+    color: white; 
+    border-radius: 10px; 
+    margin: auto;
+}
+/*  */
+/* Contacto */
+.formulario-contacto{
+    background-color: #f7c331;
+    padding-bottom: 1em;
+    padding-top: 2em;
+} 
+.contacto-etiqueta{ 
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+  .contacto-formulario textarea {
+    height: auto; 
+    resize: vertical;
+    background-color: #F2F3F4 ;
+    padding: 1em;
+}
+.contacto-formulario input {
+    background-color: #F2F3F4 ;
+    padding: 1em;
+}
+.contacto-formulario-grupo{
+    padding: 5px;
+}
+.contacto {         
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(300px, 30%), 1fr));
+    gap: 2em;     
+    margin: 0 10%;
+  }
+.contacto > *{ 
+    color: #F8F9F9;     
+}
+.contacto-detalle {      
+     padding: 2em;
+    border: 2px solid #F8F9F9;
+    border-radius: 1em;
+     font-size: clamp(1em, 1vw + 0.3em, 3em);   
+}
+.contacto-formulario {     
+    padding: 2em;
+    border: 2px solid #F8F9F9;
+    border-radius: 1em;
+    grid-row: span 2 / span 2; 
+}
+.contacto-horario {  
+    padding-bottom: 1em;
+    border: 2px solid #F8F9F9;
+    border-radius: 1em;
+}
+.contacto-detalle-grupo{
+    padding: .5em;
+}
+.contacto-formulario-grupo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.contacto-formulario input,
+.contacto-formulario textarea {
+    border-radius: 7px;
+    border: none;  /*revisar este bloque con el siguiente al parecer llamamos al mismo elemento textarea*/
+    height: 30px;
+}
+.contacto-formulario textarea {height: auto; resize: vertical;}  
+.cs-div-contacto-enviar{
+    text-align: center;
+}
+.cs-btn-contacto-enviar{
+    margin-top: 10px;
+    width: 50%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    color: var(--text-color-inverse);
+    border: 1px solid var(--theme-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+.cs-btn-contacto-enviar:hover { box-shadow: 0 0 14px var(--primary-color)}
+/*  */
+/* Tabla */
+table{
+    border-collapse: collapse;
+    border-radius: 0.3em;
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+    height: 5em;
+    font-size: clamp(1em, 1vw + 0.1em, 3em);
+}
+thead{ border-collapse:collapse; 
+    height: 2em;
+}
+thead th{ 
+    vertical-align: middle;
+}
+td{ 
+    padding: 5px;
+}
+tbody tr{
+    cursor: pointer;
+    
+}
+tbody tr:hover{ 
+    background: rgba(15, 15, 14, 0.3);
+}
+/* Fin Contato */
+
+/* FOOTER */
+footer{text-align: center; background: url(imagenes/bg.jpg); padding: 40px;
+    /* background: #CCCCCC; Personalmente me gusta este fondo de color */
+}
+.copyright{color:#FFFFFF; font-size: 13px; margin: 20px;}
+/* FIN Footer */
+
+
+/* Media Query */
+@media(max-width: 720px) {
+    .hamburger{ width: 30px; position: absolute; top: 40px; transform: translateY(-50%);}
+    .hamburger span{ margin-bottom: 3px; background-color: white; display: block; height: 3px;}
+    .menu .logo{ margin-left: 50px;}
+    menu{ position: relative;}
+    nav ul{
+        float: none;
+        width: 175px;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        margin: 0px;
+        padding-top: 30px;
+        transition: 1s;
+        left: -100%;     
+        z-index: 2;
+    }
+    .menu ul li{ display: block; float: none;}
+    .menu ul li a{ font-size: 18px; padding: 10px 5px;}
+    .open{ left: 0;}
+    .close{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        top: 15px;
+        color: skyblue;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 480px) {
+    
+    /* .nosotros{
+        margin: 0 1%;
+    }
+    .cs-diferente-contenido{        
+        display: flex;
+        flex-direction: column;       
+        margin-top: 2em;
+    }
+    .cs-diferente-lista{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .cs-diferente-imagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+    .cs-diferente-figure{
+        width: 200px;
+        height: 200px;
+    }
+    figure{
+        text-align: center;
+    } */
+
+    /* .contacto-detalle,
+    .contacto-formulario{
+        padding: 0;
+    } */
+    /* .contacto-horario{
+       padding-bottom: 1em;
+    } */
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia Alura 2024</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="funciones.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="menu">
+        <div class="hamburger" onclick="mostrar()">
+            <span></span><span></span><span></span>
+        </div>
+        <label class="logo">Barberia Alura 2024</label>
+        <ul id="sliding_menu">
+            <li><span class="close" onclick="ocultar()">X</span></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienessomos">Quienes Somos</a></li>
+            <li><a href="#diferencial">Diferencial</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#formulario-contacto">Contactenos</a></li>
+        </ul>
+    </nav>
+    <!-- banner -->
+    <header>
+    <div id="inicio" class="banner">
+        <div class="texto_banner">
+            <h1>Servicios con Experiencia</h1>
+            <p>Profesionales experimentados que están constantemente 
+                observando los cambios y movimiento en el mundo de la moda
+            </p>
+        </div>
+        <img src="imagenes/logo-blanco.png" alt="">
+    </div>
+    </header>
+
+    <main>
+        <section id="quienessomos" class="nosotros">
+            <h1 class="titulo">¿Quienes Somos?</h1>
+            <div class="linea"></div>
+            <img class="utensilios" src="imagenes/utensilios.jpg" alt="Utensilios de un Barbero">
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado 
+                lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura 
+                ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a 
+                nuestros clientes".</strong></em></p>
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los 
+                cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros 
+                clientes las últimas tendencias. El atendimiento posee un padrón de 
+                excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.
+            </p>
+            <a href="#" class="boton"> Ver mas</a>
+        </section>
+
+        <section class="ubicacion">
+            <h1 class="titulo ubicacion-titulo">Nuestra Ubicacion</h1>
+            <div class="linea"></div>
+            <p>Nuesto local esta ubicado en el centro de la ciudad</p>
+            <div class="ubicacion-mapa">
+                <iframe class="cs-ubicacion-iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d37829.925852192646!2d-74.06451252385011!3d4.703674609769161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!2m1!1sOracle%20NetSuite%20colombia!5e0!3m2!1ses-419!2sco!4v1707309530122!5m2!1ses-419!2sco" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <!--  -->
+        <section id="id-diferente" class="cs-diferente">
+            <h1 class="titulo">Diferenciales</h1>
+            <div class="linea"></div>
+            <div class="cs-diferente-contenido">
+                <div class="cs-diferente-lista" >
+                    <ul>
+                        <li class="cs-items">Atencion personalizada a los clientes</li>
+                        <li class="cs-items">Espacio amplios y confortables</li>
+                        <li class="cs-items">Localizacion</li>
+                        <li class="cs-items">Profesionales de la belleza</li>
+                        <li class="cs-items">Puntualidad</li>
+                        <li class="cs-items">Limpieza</li>
+                    </ul>
+                </div>
+                <div class="cs-diferente-imagen">
+                    <figure>
+                        <img class="cs-diferente-figure" src="imagenes/diferenciales.jpg">
+                        <figcaption>Oficio hecho arte</figcaption>                
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <div class="cs-diferente-video">
+            <iframe class="cs-diferente-iframe" src="https://www.youtube.com/embed/QmtPlbxB7rA?si=Yv59XK4AvVBJ4J_c&amp;start=37" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        </div>
+
+        <section class="servicios" id="servicios">
+            <h1 class="titulo">Nuestros Servicios</h1>
+            <div class="linea"></div>
+            <div class="contenido">
+                <div class="imagen1">
+                    <h2 id="textos">Cabello</h2>
+                    <img class="img-cabello" src="imagenes/cabello.png" alt="">
+                    <p id="textos" class="producto-descripcion">Con tijera o maquina, a gusto del Cliente</p>
+                    <p id="textos" class="producto-precio">$40.000 Cop</p>
+                    <div class="boton2"> Ver mas</div>
+                </div>
+                <div class="imagen2">
+                    <h2 id="textos">Bigote</h2>
+                    <img class="img-cabello" src="imagenes/bigote.png" alt="">
+                    <p id="textos" class="producto-descripcion">Diseños diversos para hombres con estilo y buena presentacion</p>
+                    <p id="textos" class="producto-precio">$15.000 Cop</p>
+                    <div class="boton2"> Ver mas</div>
+                </div>
+                <div class="imagen3">
+                    <h2 id="textos">Toque Femenino</h2>
+                    <img class="img-cabello" src="imagenes/toque-femenino.png" alt="">
+                    <p id="textos" class="producto-descripcion">Estilos perfectos segun la moda o gusto generacional</p>
+                    <p id="textos" class="producto-precio">$60.000 Cop</p>
+                    <div class="boton2"> Ver mas</div> 
+                </div>
+                <div class="imagen4">
+                    <h2 id="textos">Barba</h2>
+                    <img class="img-cabello" src="imagenes/barba.png" alt="">
+                    <p id="textos" class="producto-descripcion">Corte y diseno profesional</p>
+                    <p id="textos" class="producto-precio">$25.000 Cop</p>
+                    <div class="boton2"> Ver mas</div> 
+                </div>
+                <div class="imagen5">
+                    <h2 id="textos">Cabello+Barba</h2>
+                    <img class="img-cabello" src="imagenes/cabello+barba.png" alt="">
+                    <p id="textos" class="producto-descripcion">Paquete complet</p>
+                    <p id="textos" class="producto-precio">$50.000 Cop</p>
+                    <div class="boton2"> Ver mas</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="formulario-contacto" id="formulario-contacto">
+            <div class="contacto-titulo">
+                <h2 class="titulo">Contacto</h2>
+                <div class="linea"></div>
+            </div>
+            <section class="contacto" id="contacto">                        
+                <div class="contacto-detalle">
+                    <div class="contacto-detalle-grupo">
+                        <p class="contacto-etiqueta">Dirección:</p>
+                        <p class="contacto-texto">Medellin, Colombia - Latam</p>
+                    </div>
+                    <div class="contacto-detalle-grupo">
+                        <p class="contacto-etiqueta">Email:</p>
+                        <p class="contacto-texto">jyzapata@gmail.com</p>
+                    </div>
+                    <div class="contacto-detalle-grupo texto-largo">
+                        <p class="contacto-texto">
+                            Deje su mensaje y con gusto se los responderemos. Muchas gracias.
+                        </p>
+                    </div>
+                </div>
+                <form class="contacto-formulario" name="contacto" netlify>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta" for="name">Nombre</label>
+                        <input required type="text" name="name" id="name" />
+                    </div>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta"  for="email">Email</label>
+                        <input required type="email" name="email" id="email" />
+                    </div>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta" for="message">Mensaje</label>
+                        <textarea required name="message" id="message" rows="6"></textarea>
+                    </div>
+                    <div class="cs-div-contacto-enviar">
+                        <button type="submit" class="cs-btn-contacto-enviar">Enviar</button>
+                    </div>
+                </form>
+                <div class="contacto-horario">
+                    <table class="cs-contacto-tabla">
+                        <thead>
+                            <th>Dia</th>
+                            <th>Horario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>9:00am - 7:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Miercoles</td>
+                                <td>8:00am - 8:00pm</td>
+                            </tr><tr>
+                                <td>Viernes</td>
+                                <td>7:00am - 9:00pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                                                                                                                       
+            </section>
+        </div>
+
+        <!-- <div class="formulario-contacto" id="formulario-contacto">
+            <section class="contacto" id="contacto">
+                <div class="contacto-titulo">
+                    <h2 class="titulo">Contacto</h2>
+                    <div class="linea"></div>
+                </div>
+                <div class="contacto-detalle">
+                    <div class="contacto-detalle-grupo">
+                        <p class="contacto-etiqueta">Dirección:</p>
+                        <p class="contacto-texto">Medellin, Colombia - Latam</p>
+                    </div>
+                    <div class="contacto-detalle-grupo">
+                        <p class="contacto-etiqueta">Email:</p>
+                        <p class="contacto-texto">jyzapata@gmail.com</p>
+                    </div>
+                    <div class="contacto-detalle-grupo">
+                        <p class="contacto-texto">
+                        Deje su mensaje y con gusto se los responderemos. Muchas gracias.
+                        </p>
+                    </div>
+                </div>
+                <form class="contacto-formulario" name="contacto" netlify>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta" for="name">Nombre</label>
+                        <input required type="text" name="name" id="name" />
+                    </div>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta"  for="email">Email</label>
+                        <input required type="email" name="email" id="email" />
+                    </div>
+                    <div class="contacto-formulario-grupo">
+                        <label class="contacto-etiqueta" for="message">Mensaje</label>
+                        <textarea required name="message" id="message" rows="6"></textarea>
+                    </div>
+                    <div class="cs-div-contacto-enviar">
+                        <button type="submit" class="cs-div-contacto-enviar">Enviar</button>
+                    </div>                    
+                </form>
+                <div class="contacto-horario">
+                    <table>
+                        <thead>
+                            <th>Dia</th>
+                            <th>Horario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>9:00am - 7:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Miercoles</td>
+                                <td>8:00am - 8:00pm</td>
+                            </tr><tr>
+                                <td>Viernes</td>
+                                <td>7:00am - 9:00pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div> -->
+                <!-- la propiedad alt nos ayuda en caso tal que algun navegador no pueda visualizar la imagen-->            
+        <footer>
+            <div class="grid-container">
+                <div class="footer-alura">
+                    <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+                </div>
+                <div class="footer-redes">
+                    <h3 style="color: #ffffff;">Siguenos en:</h3>
+                    <i class='bx bxl-facebook-circle bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                    <i class='bx bxl-instagram-alt bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                    <i class='bx bxl-youtube bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                    <i class='bx bxl-google-plus-circle bx-sm bx-burst-hover espacio' style='color:#ffffff' ></i>
+                </div>
+                <div class="footer-derechos">
+                    <p class="copyright">&copy Powered by Jovany ZH for ONE-Alura</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- <footer>
+        <section class="seccion-footer">
+            <div class="footer-imagenes">
+                <img src="img/logo-one-3-2.png" alt="" class="img-footer-one">
+                <img src="img/logo-aluralatam-oracle-2.png" alt="" class="img-footer-alura">
+            </div>
+            <div class="footer-redes">
+                <h3 style="color: #ffffff;">Siguenos en:</h3>
+                <i class='bx bxl-facebook-circle bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                <i class='bx bxl-instagram-alt bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                <i class='bx bxl-youtube bx-sm bx-burst-hover espacio' style='color:#ffffff'></i>
+                <i class='bx bxl-google-plus-circle bx-sm bx-burst-hover espacio' style='color:#ffffff' ></i>
+            </div>
+            <div class="footer-derechos">
+                <p class="copyrightx">&Powered by Jovany ZH for ONE-Alura</p>
+            </div>
+        </section>
+    </footer> -->
+</body>
+</html>
