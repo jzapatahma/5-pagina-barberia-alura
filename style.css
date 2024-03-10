@@ -298,13 +298,13 @@ body{
     border-radius: 1em;
      font-size: clamp(1em, 1vw + 0.3em, 3em);   
 }
-.contacto-formulario {     
+.contacto-formulario{     
     padding: 2em;
     border: 2px solid #F8F9F9;
     border-radius: 1em;
     grid-row: span 2 / span 2; 
 }
-.contacto-horario {  
+.contacto-horario{  
     padding-bottom: 1em;
     border: 2px solid #F8F9F9;
     border-radius: 1em;
@@ -323,7 +323,7 @@ body{
     border: none;  /*revisar este bloque con el siguiente al parecer llamamos al mismo elemento textarea*/
     height: 30px;
 }
-.contacto-formulario textarea {height: auto; resize: vertical;}  
+.contacto-formulario textarea{height: auto; resize: vertical;}  
 .cs-div-contacto-enviar{
     text-align: center;
 }
@@ -350,7 +350,7 @@ table{
     height: 5em;
     font-size: clamp(1em, 1vw + 0.1em, 3em);
 }
-thead{ border-collapse:collapse; 
+thead{ border-collapse:collapse;
     height: 2em;
 }
 thead th{ 
@@ -367,12 +367,18 @@ tbody tr:hover{
     background: rgba(15, 15, 14, 0.3);
 }
 /* Fin Contato */
-
 /* FOOTER */
-footer{text-align: center; background: url(imagenes/bg.jpg); padding: 40px;
-    /* background: #CCCCCC; Personalmente me gusta este fondo de color */
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    /* padding: 40px; */
+    
 }
-.copyright{color:#FFFFFF; font-size: 13px; margin: 20px;}
+.copyright{
+    color:#FFFFFF;
+    font-size:13px;
+    margin: 20px;
+}
 /* FIN Footer */
 
 
